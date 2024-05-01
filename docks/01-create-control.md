@@ -62,7 +62,7 @@ sudo apt-get update && sudo apt-get install -y apt-transport-https curl
 ~~~
 12. Download and add the GPG key:
 ~~~
-curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.30.0/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.30/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
 ~~~
 13. Add Kubernetes to the repository list:
 ~~~
