@@ -88,6 +88,9 @@ sudo apt-mark hold kubelet kubeadm kubectl
 # Initialize the Cluster
 1. Initialize the Kubernetes cluster on the control plane node using kubeadm:
 ~~~
+sudo kubeadm init --pod-network-cidr 192.168.0.0/16 --kubernetes-version 1.30.0
+~~~
+~~~
 kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.25.0/manifests/calico.yaml
 ~~~
 2. Check the status of the control plane node:
