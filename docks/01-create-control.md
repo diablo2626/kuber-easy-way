@@ -74,3 +74,5 @@ sudo apt-get install -y kubelet kubeadm kubectl
 ~~~
 sudo apt-mark hold kubelet kubeadm kubectl
 ~~~
+# Initialize the Cluster
+1. Initialize the Kubernetes cluster on the control plane node using kubeadm:
